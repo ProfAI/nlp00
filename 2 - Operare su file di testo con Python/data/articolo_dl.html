@@ -1,0 +1,132 @@
+<html>
+
+	<head>
+		<title>
+		Deep Learning svelato | Giuseppe Gullo
+		</title>
+	</head>
+	<body>
+
+		<h1>
+			Deep Learning svelato: ecco come funzionano le Reti Neurali Artificiali
+		</h1>
+
+		<h3>
+			di Giuseppe Gullo
+		</h3>
+
+		<p>
+			C’è tanto rumore intorno ai termini Reti Neurali Artificiali (dall’inglese Artificial Neural Network — ANN) e l’apprendimento profondo (dall’inglese Deep Learning, meglio chiamarlo così).
+			Scrivo questo breve post giusto per farti capire che, in fondo, tutto questo rumore è ben giustificato!
+			L’intelligenza artificiale sta avanzato in maniera esponenziale, trainata dai progressi nel machine learning che a loro volta derivano per gran parte da un’ unica tipologia di modelli: le reti neurali artificiali.
+		</p>
+
+		<p>
+			Una rete neurale artificiale è un modello di machine learning che si ispira al funzionamento del cervello animale, quello che abbiamo anche noi mammiferi intelligenti all’interno della nostra scatola cranica, che può essere utilizzato per risolvere essenzialmente tre tipi di problemi:
+			<ul>
+				<li>
+					<b>Classificazione</b>: in cui la variabile da prevedere è di tipo categorico, cioè una classe (es. abbiamo un insieme di immagini di gatti e le vogliamo usare per riconoscere i gatti in altre foto)
+				</li>
+				<li>
+					<b>Regressione</b>: in cui la variabile da prevedere è di tipo continuo, cioè un numero (es. abbiamo lo storico del valore di FIAT in borsa e vogliamo utilizzarlo per prevedere il valore futuro)
+				</li>
+				<li>
+					<b>Clustering</b>: problema molto simile alla classificazione ma in cui non abbiamo a disposizione delle classi (es. abbiamo un insieme di immagini di tumori, vogliamo riconoscere quali sono maligni e quali benigni)
+				</li>
+			</ul>
+
+		</p>
+
+			<h2>
+				Come il cervello apprende
+			</h2>
+
+			<p>
+				Il cervello è composto da centinaia di miliardi di cellule nervose, i <b>neuroni</b>.
+				Ogni volta che il cervello riceve uno stimolo sensoriale un gruppo di neuroni riceve un segnale, chiamato <b>potenziale d’azione</b>, se il potenziale di azione è abbastanza forte viene propagato ai neuroni vicini tramite dei canali chiamati sinapsi.
+			</p>
+
+			<p>
+				Questo processo si ripete a cascata, neuroni attivano altri neuroni, fino a quando il segnale si esaurisce.
+				I neuroni che si attivano insieme si legano insieme, questo è il concetto alla base dell’apprendimento (apprendimento hebbiano), così i neuroni si uniscono in complessi reticoli che sono proprio le reti neurali, la sede di tutta la nostra conoscenza.
+			</p>
+
+		<h2>
+			Un'approccio biologico al Machine Learning
+		</h2>
+
+		<p>
+			Le reti neurali artificiali utilizzano lo stesso approccio per permettere alle macchine di apprendere dai dati, cercando relazioni tra di essi e raggiungendo livelli di astrazione sempre più profondi.
+
+			All’interno di una rete neurale artificiale i neuroni sono disposti su più strati:
+
+			<ul>
+				<li>
+					<b>Uno strato di input</b>: che prende in ingresso i dati, ogni neurone di questo strato rappresenta una proprietà del dataset
+				</li>
+				<li>
+					<b>Uno strato di output</b>: che fornisce il risultato della rete neurale
+				</li>
+				<li>
+					<b>Uno o più strati nascosti</b>: che si trovano tra lo strato di input e quello di output.
+				</li>
+			</ul>
+
+			Il compito degli strati nascosti è di utilizzare le proprietà (features) del dataset per apprendere nuove proprietà.
+
+			Solitamente prima della fase di creazione di un modello di machine learning, il dataset viene analizzato e manipolato per estrarre proprietà significative da quelle di cui già si dispone. Questo processo prende il nome di <b>feature extraction</b> e ha un ruolo fondamentale per la creazione di un modello di machine learning robusto.
+
+			Una rete neurale artificiale automatizza il processo di feature extraction all’interno di ogni strato nascosto, per questo motivo le reti neurali artificiali sono definite modelli end-to-end, appunto perché prendono come input i dati grezzi del dataset per svolgere attività come classificazione, regressione o clustering.
+
+			Una rete è definita “profonda” (dall’inglese deep) quando contiene due o più strati nascosti, in questi casi la rete utilizzerà le proprietà apprese in uno strato nascosto per apprendere ulteriori nuove proprietà ancora più significative nello strato successivo, fino a utilizzarle per eseguire classificazione, regressione o clustering nello strato di output.
+
+			La performance di un modello di machine learning, intesa come precisione o errore, tende a convergere a un valore massimo, al contrario i modelli basati sul deep learning non hanno questa limitazione e migliorano gradualmente all’aumentare del numero di dati disponibili per l’addestramento, proprio grazie alla loro capacità di astrazione e di apprendere nuove proprietà dai dati.
+
+		</p>
+
+		<h2>
+			Istruire una rete neurale artificiale
+		</h2>
+
+		<p>
+			Le reti neurali artificiali non sono una novità, infatti sono conosciute da più di mezzo secolo, ma sono rimaste chiuse in un cassetto a causa dell’assenza di un metodo efficace ed efficiente per addestrarle.
+
+			Questo è durato fino al 1986, anno in cui Jeff Hinton insieme a David Rumelhart e Ronald J. Williams proposero in questo paper l’utilizzo dell’algoritmo della <b>Retropropagazione</b> (dall’inglese Backpropagation) che ha stabilito la nascita di quello che oggi è il <b>Deep Learning</b>, ovvero l’insieme di metodi utilizzati per addestrare una rete neurale artificiale profonda.
+
+			Ancora oggi, a più di 30 anni di distanza, la Retropropagazione è l’algoritmo più importante del deep learning, grazie Jeff!
+
+		</p>
+
+		<h2>
+			Quando usare il Deep Learning
+		</h2>
+
+		<p>
+			A differenza di quanto potresti pensare, le reti neurali non sono sempre la soluzione migliore, per due motivi in particolare:
+			<ul>
+				<li>
+					Per essere addestrate richiedono molti, molti (molti) dati, almeno nell’ordine di migliaia.
+				</li>
+				<li>
+					Sono computazionalmente davvero dispendiose e spesso per completare l’addestramento in tempi umani è necessario parallelizzare il lavoro su di un <b>cluster di GPU</b>.
+				</li>
+			</ul>
+			Inoltre per molti tipi di problemi relativamente semplici l’intervento di un modello basato sulle reti neurali non è neanche necessario, ma è possibile ottenere ottimi risultati con modelli meno complessi.
+		</p>
+
+		<h2>
+			Deep Learning nella vita reale
+		</h2>
+
+		<p>
+			I sistemi di computer vision odierni sono in grado di riconoscere persone, animali e oggetti con una precisione che è addirittura maggiore di quella dell’uomo, questi sistemi usano il Deep Learning.
+
+			Le tecnologie di riconoscimento del parlato di Siri, Alexa e Cortana stanno pian piano raggiungendo lo stato dell’arte, queste tecnologie usano il Deep Learning.
+
+			Nel 2015 <b>AlphaGo</b> è riuscito a battere il campione mondiale di Go Lee Sedolin una partita ufficiale, secondo gli esperti un risultato del genere non sarebbe dovuto arrivare prima di un altro decennio. AlphaGo usa il Deep Learning.
+
+			Google è in assoluto la società che più si serve del Deep Learning e che sta maggiormente contribuendo al suo sviluppo, infatti la maggior parte dei servizi di Google, partendo da Search e passando per Gmail e Translate, utilizzano in un modo o nell’altro le reti neurali artificial e questo ha fortemente inciso sul suo successo su scala globale.
+		</p>
+
+	</body>
+</html>
