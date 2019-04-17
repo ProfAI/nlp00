@@ -1,52 +1,32 @@
 {"intents": [
-        {"tag": "greeting",
-         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
-         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
-         "context_set": ""
+        {"tag": "saluti",
+         "patterns": ["Ciao", "Salve", "hei", "Ci sei ?", "Buongiorno","Buonasera"],
+         "responses": ["Ciao amico", "Hei, felice di vederti", "Eccoti qui !"]
         },
-        {"tag": "goodbye",
-         "patterns": ["Bye", "See you later", "Goodbye"],
-         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        {"tag": "arrivederci",
+         "patterns": ["Addio", "Arrivederci", "Buona giornata","A presto", "Ci vediamo"],
+         "responses": ["A più tardi", "A presto", "Stammi bene amico"]
         },
-        {"tag": "thanks",
-         "patterns": ["Thanks", "Thank you", "That's helpful"],
-         "responses": ["Your welcome!", "Any time!", "My pleasure"]
+        {"tag": "grazie",
+         "patterns": ["Grazie", "Ti ringrazio", "Fantastico"],
+         "responses": ["Figurati !", "E' il mio lavoro", "E' stato un paicere"]
         },
-	{"tag": "noanswer",
-         "patterns": [""],
-         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"]
+        {"tag": "workout-addominali",
+         "patterns": ["Consigliamo un'allenamento per gli addominali", "Voglio allenare gli addominali", "Dammi qualche esercizio per gli addominali" ],
+         "responses": ["Ecco qualche esercizio per gli addominali: 10 crunches, 10 situp, 10 reverse crunch. Ripeti per 5 volte"]
         },
-        {"tag": "hours",
-         "patterns": ["What hours are you open?", "What are your hours?", "When are you open?" ],
-         "responses": ["We're open every day 9am-9pm", "Our hours are 9am-9pm every day"]
+        {"tag": "workout",
+         "patterns": ["Voglio allenarmi", "Fammi allenare","Consigliami degli esercizi da fare",
+             "responses": ["Ecco il tuo allenamento di oggi: 60 secondi di jumping jack, 10 piegamenti sulle braccia, 20 squats. Ripeti per 5 volte."],
         },
-        {"tag": "flowers",
-         "patterns": ["I would like to buy flowers", "I want to buy a flower","What are the flowers you have?", "What kinds of flowers are there?", "What do you have?" ],
-         "responses": ["We have Rose, Tulip and Daisy, which one you prefer?", "Rose, Tulip and Daisy, which one do you like?"],
-	 "context_set": "buyflower"
+        {"tag": "presentazione",
+         "patterns": ["Chi sei ?", "Come ti chiami ?", "Qual è il tuo nome ?", "Presentati" ],
+         "responses": ["Io sono il tuo Coach personale"]
         },
-        {"tag": "payments",
-         "patterns": ["credit cards", "Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ],
-         "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards"]
-        },
-	{"tag": "rose",
-         "patterns": ["rose flowers", "roses", "rose" ],
-         "responses": ["Rose is a lovely flower!"],
-	 "context_filter": "buyflower"
-        },
-	{"tag": "tulip",
-         "patterns": ["tulip flowers", "tulips", "tulip" ],
-         "responses": ["Tulip is the best one!"],
-	 "context_filter": "buyflower"
-        },
-	{"tag": "daisy",
-         "patterns": ["daisy flowers", "daisy"],
-         "responses": ["I love Daisy too!"],
-	 "context_filter": "buyflower"
-        },
-        {"tag": "opentoday",
-         "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
-         "responses": ["We're open every day from 9am-9pm", "Our hours are 9am-9pm every day"]
-        }
+        {"tag": "come-stai",
+             "patterns": ["Come stai ?", "Come ti senti ?", "Come butta ?],
+             "responses": ["Sto benone grazie !", "Mi sento in splendida forma"]
+            }
+    }
    ]
 }
