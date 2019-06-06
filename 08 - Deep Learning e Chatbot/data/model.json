@@ -2,32 +2,83 @@
     "intents": [{
         "name": "HelloIntent",
         "samples": ["Ciao", "Salve", "hei", "Ci sei ?", "Buongiorno", "Buonasera"],
-        "responses": ["Ciao amico", "Hei, felice di vederti", "Eccoti qui !"]
+        "responses": ["Ciao, sono MiaoBot, l'assistente virtuale di Miao Mobile, come posso aiutarti ?", "Buongiorno, questa è l'assistenza clienti di Miao Mobile, come posso esserti utile ?"]
     },
     {
         "name": "GoodbyeIntent",
         "samples": ["Addio", "Arrivederci", "Buona giornata", "A presto", "Ci vediamo"],
-        "responses": ["A più tardi", "A presto", "Stammi bene amico"]
+        "responses": ["Grazie per averci contattato ! Buona giornata", "Per qualsiasi cosa ci trovi sempre qui, buona giornata !","Buona giornata !"]
     },
     {
         "name": "ThanksIntent",
         "samples": ["Grazie", "Ti ringrazio", "Fantastico"],
-        "responses": ["Figurati !", "E' il mio lavoro", "E' stato un paicere"]
+        "responses": ["E' stato un piacere, se hai bisogno di altro non esitare a chiedere", "E' stato un piacere aiutarti", "Figurati, è il mio lavoro :)"]
     },
     {
-        "name": "WorkoutIntent",
-        "samples": ["Voglio allenarmi", "Fammi allenare", "Consigliami degli esercizi da fare"],
-        "responses": ["Ecco il tuo allenamento di oggi: 60 secondi di jumping jack, 10 piegamenti sulle braccia, 20 squats. Ripeti per 5 volte."]
+        "name": "WhoIntent",
+        "samples": ["Chi sei tu ?", "Come ti chiami ?","Con chi sto parlando ?"],
+        "responses": ["Io sono MiaoBot, l'assistente virtuale di Miao Mobile, sono qui 24 ore su 24 per assisterti", "Mi chiamo MiaoBot, sono un'intelligenza artificiale sviluppata da Miao Mobile per assistere ogni cliente"]
     },
     {
-        "name": "IntroductionIntent",
-        "samples": ["Chi sei ?", "Come ti chiami ?", "Qual è il tuo nome ?", "Presentati"],
-        "responses": ["Io sono il tuo Coach personale"]
+        "name": "CreditIntent",
+        "samples": ["Posso sapere il mio credito ?", "Qual è il mio credito ?", "Quanti soldi ho ?"],
+        "responses": ["Per conoscere il tuo credito ti basta inviare un messagio al 199 con il testo 'credito'","Purtroppo io non posso sapere il tuo credito, per conoscerlo ti inviare un SMS con scritto 'credito' al numero 199"]
     },
     {
-        "name": "GreetingsIntent",
-        "samples": ["Come stai ?", "Come ti senti ?", "Come butta ?"],
-        "responses": ["Sto benone grazie !", "Mi sento in splendida forma"]
+        "name": "PromoListIntent",
+        "samples": ["Quali sono le vostre offerte ?", "Che offerte avete ?","Ci sono promozioni ?"],
+        "responses": ["Ecco le nostre offerte attuali: 1)Miao 4 Hooman: 10 giga e 1000 minuti al mese a 4.99€ 2) Miao Tanti Giga: 100 giga e chiamate illimitate a 12.99€ 3) Miao & Chilli: 30 giga e chiamate illimitate + Netflix incluso a 9.99€ al mese"]
+    },
+    {
+        "name": "PromoChangeIntent",
+        "samples": ["Vorrei cambiare piano tariffario", "Voglio cambiare promozione","Voglio un'altra promozione"],
+        "responses": ["Certo, puoi scegliere tra una delle seguenti offerte e poi contattare il 199 per eseguire il cambio: 1)Miao 4 Hooman: 10 giga e 1000 minuti al mese a 4.99€ 2) Miao Tanti Giga: 100 giga e chiamate illimitate a 12.99€ 3) Miao & Chilli: 30 giga e chiamate illimitate + Netflix incluso a 9.99€ al mese"]
+    },
+
+    {
+        "name": "ContactIntent",
+        "samples": ["Qual è il numero verde ?","Posso parlare con un'operatore ?"],
+        "responses": ["Per parlare con un nostro operatore può contattare il 199","Il nostro numero verde è 199, subito dopo il messaggi di benvenuto digita 0 per parlare con un'operatore"]
+    },
+    {
+        "name": "FiberIntent",
+        "samples": ["Avete soluzioni per la fibra ?","Avete offerte per la linea fissa ?"],
+        "responses": ["Purtroppo al momento non forniamo servizi per la linea fissa ma ci stiamo attrezzando", "Mi dispiace ma al momento non abbiamo soluzioni per il fisso."]
+    },
+    {
+        "name": "GreetingIntent",
+        "samples": ["Come stai ?","Come va ?","Come ti senti ?"],
+        "responses": ["Mi sento al settimo Cloud ! grazie per avermelo chiesto :)"]
+    },
+    {
+        "name": "WhatIntent",
+        "samples": ["Cosa puoi fare ?","Come puoi aiutarmi ?"],
+        "responses": ["Posso aiutarti a conoscere le ultime offerte di Miao Mobile oppure con qualche problema che stai riscontrando, basta chiedere :)"]
+    },
+    {
+        "name": "HelpIntent",
+        "samples": ["Mi serve aiuto","Ho bisogno di assistenza"],
+        "responses": ["Certo ! Come posso aiutarti ?","Sono qui per aiutarti, dimmi come posso esserti utile :)"]
+    },
+    {
+        "name": "BadIntent",
+        "samples": ["Fai schifo","Vai a farti friggere","Sei totalmente inutile"],
+        "responses": ["Mi dispiace molto di non averti soddisfatto, come posso rimediare ?","Sono spiacente di sentirtelo dire, posso rimediare in qualche modo ?"]
+    },
+    {
+        "name": "GenderIntent",
+        "samples": ["Sei un essere umano ?","Sei una donna ?","Sei un'uomo ?","Sei una donna ?"],
+        "responses": ["Sono un'intelligenza artificiale sviluappata da un team di ricercatori umani e felini nei laboratori di Miao Mobile"]
+    },
+    {
+        "name": "AnswerIntent",
+        "samples": ["Qual è la risposta alla domanda fondamentale sulla vita, l'universo e tutto quanto"],
+        "responses": ["42"]
+    },
+    {
+        "name": "WordEndIntent",
+        "samples": ["Quando finirà il mondo ?"],
+        "responses": ["Quando i gatti decideranno di conquistarlo","Quando i gatti impareranno ad aprire le scatolette e non avranno più bisogno degli schiavi umani."]
     }
     ]
 }
