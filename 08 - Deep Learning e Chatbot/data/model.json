@@ -58,7 +58,7 @@
     {
         "name": "HelpIntent",
         "samples": ["Mi serve aiuto","Ho bisogno di assistenza"],
-        "responses": ["Certo ! Come posso aiutarti ?","Sono qui per aiutarti, dimmi come posso esserti utile :)"]
+        "responses": ["Sarò lieto di assisterti ! Come posso aiutarti ?","Sono qui per aiutarti, dimmi come posso esserti utile :)"]
     },
     {
         "name": "BadIntent",
